@@ -1,6 +1,6 @@
 exports.up = function(knex) {
   return knex.schema.createTable("appts", function(table) {
-    table.varchar("name").notNullable();
+    table.string("name").notNullable();
     table.timestamps(true, true);
   });
 };

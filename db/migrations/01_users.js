@@ -1,8 +1,8 @@
 exports.up = function(knex) {
   return knex.schema.createTable("users", function(table) {
-    table.varchar("name").notNullable();
-    table.integer("age");
-    table.varchar("email").notNullable();
+    table.string("name").notNullable();
+    table.string("email").notNullable();
+    table.string("password");
   });
 };
 
